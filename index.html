@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — Tick Notes</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #1a1a2e;
+      background: #f8f9ff;
+    }
+
+    header {
+      background: #1A237E;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      color: #9FA8DA;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #9FA8DA;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .summary-card {
+      background: #ffffff;
+      border: 1.5px solid #E8EAF6;
+      border-left: 4px solid #1A237E;
+      border-radius: 10px;
+      padding: 28px 32px;
+      margin: 40px 0 36px;
+    }
+
+    .summary-card h2 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1A237E;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .summary-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #3F51B5;
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+
+    .dot.red { background: #E53935; }
+    .dot.green { background: #2E7D32; }
+
+    .summary-item span {
+      font-size: 14px;
+      color: #374151;
+      line-height: 1.5;
+    }
+
+    section {
+      background: #ffffff;
+      border: 1px solid #E8EAF6;
+      border-radius: 10px;
+      padding: 32px;
+      margin-bottom: 20px;
+    }
+
+    section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1A237E;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #E8EAF6;
+    }
+
+    section h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1a1a2e;
+      margin: 20px 0 8px;
+    }
+
+    section p {
+      color: #374151;
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+
+    section p:last-child { margin-bottom: 0; }
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      margin: 10px 0;
+    }
+
+    ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 15px;
+      color: #374151;
+      line-height: 1.7;
+      margin-bottom: 8px;
+    }
+
+    ul li::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #3F51B5;
+      margin-top: 9px;
+      flex-shrink: 0;
+    }
+
+    .highlight-box {
+      background: #F0F4FF;
+      border: 1px solid #C5CAE9;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #283593;
+      line-height: 1.7;
+    }
+
+    .contact-box {
+      background: #1A237E;
+      border-radius: 10px;
+      padding: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      color: #9FA8DA;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .contact-box a {
+      display: inline-block;
+      background: #ffffff;
+      color: #1A237E;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 12px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+    }
+
+    .effective-date {
+      text-align: center;
+      color: #9FA8DA;
+      font-size: 13px;
+      margin-top: 32px;
+    }
+
+    @media (max-width: 560px) {
+      .summary-grid { grid-template-columns: 1fr; }
+      header h1 { font-size: 24px; }
+      section { padding: 22px 18px; }
+      .contact-box { padding: 24px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Legal Document</div>
+  <h1>Privacy Policy</h1>
+  <p>Tick Notes &nbsp;·&nbsp; Effective June 22, 2026</p>
+</header>
+
+<div class="container">
+
+  <div class="summary-card">
+    <h2>At a Glance</h2>
+    <div class="summary-grid">
+      <div class="summary-item">
+        <div class="dot green"></div>
+        <span>All data stays on your device</span>
+      </div>
+      <div class="summary-item">
+        <div class="dot green"></div>
+        <span>No account or sign-in required</span>
+      </div>
+      <div class="summary-item">
+        <div class="dot green"></div>
+        <span>No data sold or shared with third parties</span>
+      </div>
+      <div class="summary-item">
+        <div class="dot green"></div>
+        <span>Works fully offline, always</span>
+      </div>
+      <div class="summary-item">
+        <div class="dot red"></div>
+        <span>No personal information collected</span>
+      </div>
+      <div class="summary-item">
+        <div class="dot red"></div>
+        <span>No analytics or tracking SDKs</span>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <h2>1. Introduction</h2>
+    <p>
+      Welcome to Tick Notes ("the App"), developed and operated by Truvion
+      ("we", "us", or "our"). This Privacy Policy explains how we handle
+      information when you use our mobile and desktop application available
+      on Android, Linux, Windows, and macOS.
+    </p>
+    <p>
+      We built Tick Notes on a simple principle: your personal information
+      belongs to you. The App is designed to work entirely on your device
+      without collecting, transmitting, or storing any of your data on
+      external servers.
+    </p>
+    <p>
+      By using Tick Notes, you agree to the practices described in this
+      Privacy Policy. If you do not agree with any part of this policy,
+      please discontinue use of the App.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Information We Collect</h2>
+    <p>
+      <strong>We collect no personal information whatsoever.</strong>
+      Tick Notes does not require you to create an account, provide an email
+      address, or share any identifying information to use the App.
+    </p>
+
+    <h3>Data you create inside the App</h3>
+    <p>
+      All content you create — notes, tasks, reminders, and focus session
+      records — is stored exclusively in a local database on your own device
+      using SQLite. This data never leaves your device and is never
+      transmitted to us or any third party.
+    </p>
+
+    <h3>Data we do NOT collect</h3>
+    <ul>
+      <li>Your name, email address, or any contact information</li>
+      <li>Your location or GPS data</li>
+      <li>Device identifiers, advertising IDs, or hardware information</li>
+      <li>Usage statistics, crash reports, or analytics events</li>
+      <li>The content of your notes or tasks</li>
+      <li>Your focus session history or productivity data</li>
+    </ul>
+
+    <div class="highlight-box">
+      Tick Notes contains no analytics SDK, no crash reporting service, no
+      advertising network, and no third-party tracking library of any kind.
+    </div>
+  </section>
+
+  <section>
+    <h2>3. How Your Data Is Stored</h2>
+    <p>
+      All App data is stored locally on your device in a SQLite database
+      managed by the Drift library. This database is saved to your device's
+      private application storage directory, which is only accessible by
+      the Tick Notes App itself.
+    </p>
+    <p>
+      When you uninstall the App, all locally stored data is permanently
+      deleted from your device. We have no ability to retrieve this data
+      once it is deleted, as it was never stored anywhere other than your
+      own device.
+    </p>
+    <h3>No cloud backup</h3>
+    <p>
+      The current version of Tick Notes does not include cloud backup or
+      cross-device sync functionality. Your data exists solely on the device
+      where you created it. We strongly recommend you maintain your own
+      backups of important notes using your device's built-in backup tools
+      or by exporting your notes manually.
+    </p>
+  </section>
+
+  <section>
+    <h2>4. Notifications and Permissions</h2>
+    <p>
+      Tick Notes may request the following device permissions. Each
+      permission is used solely to deliver the feature described and for
+      no other purpose.
+    </p>
+
+    <h3>Notification permission</h3>
+    <p>
+      Used exclusively to deliver task reminders you have explicitly set
+      within the App. All notification scheduling is performed locally on
+      your device. No notification content is transmitted to any server.
+    </p>
+
+    <h3>Storage permission (Android)</h3>
+    <p>
+      On older versions of Android, a storage permission may be requested
+      to save the App's local database. On Android 10 and above, this
+      permission is not required and is not requested.
+    </p>
+
+    <p>
+      You may revoke any permission at any time through your device's system
+      settings. Revoking notification permission will prevent task reminders
+      from appearing; it will not affect any other App functionality.
+    </p>
+  </section>
+
+  <section>
+    <h2>5. Third-Party Services</h2>
+    <p>
+      Tick Notes does not integrate with any third-party services, APIs,
+      or SDKs that collect user data. Specifically, the App does not use:
+    </p>
+    <ul>
+      <li>Firebase, Google Analytics, or any Google tracking service</li>
+      <li>Facebook SDK or Meta advertising tools</li>
+      <li>Crashlytics, Sentry, or any crash reporting service</li>
+      <li>Any advertising network or monetisation platform</li>
+      <li>Any social media login or OAuth provider</li>
+    </ul>
+    <p>
+      The only external libraries used by Tick Notes are open-source
+      packages that operate entirely on your device, including Drift
+      (local database), Riverpod (state management), fl_chart (charts),
+      and flutter_local_notifications (reminders). None of these libraries
+      transmit data externally.
+    </p>
+  </section>
+
+  <section>
+    <h2>6. Children's Privacy</h2>
+    <p>
+      Tick Notes is a general-purpose productivity application suitable for
+      all ages. The App does not knowingly collect personal information from
+      anyone, including children under the age of 13 (or the applicable age
+      of digital consent in your country).
+    </p>
+    <p>
+      Because no personal information is collected at all, Tick Notes is
+      inherently compliant with children's privacy requirements including
+      COPPA (United States) and similar regulations in other jurisdictions.
+    </p>
+  </section>
+
+  <section>
+    <h2>7. Your Rights</h2>
+    <p>
+      Because Tick Notes does not collect or process any personal data,
+      there is no personal data held by us for you to request, correct,
+      or delete. All data you create in the App is owned entirely by you
+      and remains under your full control on your device.
+    </p>
+    <p>
+      You can delete all App data at any time by uninstalling the App from
+      your device, or by clearing the App's data through your device's
+      system settings.
+    </p>
+    <p>
+      If you are a resident of the European Union, United Kingdom, or
+      California, you have additional rights under GDPR, UK GDPR, and
+      CCPA respectively. Given that we collect no personal data, these
+      rights are satisfied by design.
+    </p>
+  </section>
+
+  <section>
+    <h2>8. Data Security</h2>
+    <p>
+      Your data is protected by your device's own security mechanisms,
+      including device encryption (where enabled) and Android's application
+      sandboxing, which prevents other apps from accessing Tick Notes'
+      private storage directory.
+    </p>
+    <p>
+      We recommend keeping your device's operating system up to date and
+      using a screen lock to protect your data from unauthorized physical
+      access.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time to reflect changes
+      in the App's functionality or applicable legal requirements. When we
+      make changes, we will update the effective date at the top of this
+      page and, where required by law, notify you through the App or the
+      Google Play Store listing.
+    </p>
+    <p>
+      We encourage you to review this policy periodically. Continued use of
+      the App after any changes constitutes your acceptance of the updated
+      policy.
+    </p>
+  </section>
+
+  <div class="contact-box">
+    <h2>Questions or Concerns?</h2>
+    <p>
+      If you have any questions about this Privacy Policy or how Tick Notes
+      handles your data, please reach out to us. We aim to respond within
+      48 hours.
+    </p>
+    <a href="mailto:muhammadmaazsaqib0@gmail.com">muhammadmaazsaqib0@gmail.com</a>
+  </div>
+
+  <p class="effective-date">
+    This policy was last updated on June 22, 2026.<br/>
+    Tick Notes is developed by Truvion · com.truvion.ticknotes
+  </p>
+
+</div>
+</body>
+</html>
